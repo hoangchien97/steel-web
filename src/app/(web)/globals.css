@@ -56,3 +56,6 @@ body {
   @apply text-sm md:text-base;
 }
 
+.flex-center {
+  @apply flex justify-center items-center;
+}

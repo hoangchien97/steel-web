@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-const { fontFamily } = require('tailwindcss/defaultTheme');
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 const config: Config = {
   darkMode: "class",
@@ -25,6 +25,19 @@ const config: Config = {
       },
       fontFamily: {
         poppins: ["var(--font-poppins)", ...fontFamily.sans],
+      },
+      screens: {
+        sm: "576px",
+        // => @media (min-width: 576px) { ... }
+
+        md: "768px",
+        // => @media (min-width: 768px) { ... }
+
+        lg: "1024px",
+        // => @media (min-width: 1024px) { ... }
+
+        xl: "1400px",
+        // => @media (min-width: 1400px) { ... }
       },
     },
   },
