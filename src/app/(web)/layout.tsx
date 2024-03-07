@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import "./menu.css";
 import ThemeProvider from "@/providers/ThemeContext";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
@@ -44,9 +45,7 @@ export default function RootLayout({
           <Toast />
           <main className="font-normal">
             <Header />
-            <div className="flex max-w-[1400px] m-auto">
-              <div className="flex w-screen px-4">{children}</div>
-            </div>
+            <div className="container mx-auto px-4">{children}</div>
             <Footer />
           </main>
         </ThemeProvider>

@@ -5,14 +5,10 @@ import LoadingSpinner from "./loading";
 
 const Home = async () => {
   const homePage: any = await getHomePage();
-  if (!homePage) return <>Loading</>;
+  if (!homePage) return <LoadingSpinner />;
   return (
-    <main className="w-full">
+    <main>
       <HeroSection images={homePage.images} />
-      {/* <div>
-        <div>Populate me with Sanity Content</div>
-        <div>{JSON.stringify(homePage)}</div>
-      </div> */}
     </main>
   );
 };

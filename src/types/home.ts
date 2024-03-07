@@ -13,3 +13,9 @@ export type IHome = {
   description: string;
   images: IImage[];
 };
+
+export type IMenu = {
+  label: string;
+  icon?: string;
+  href: string;
+};
